@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hardware & Systems Specialist Portfolio</title>
-    <!-- FontAwesome Icons -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -42,7 +42,7 @@
             line-height: 1.6;
         }
 
-        /* Navigation Bar */
+
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -86,7 +86,7 @@
             cursor: pointer;
         }
 
-        /* Hero Section */
+
         .hero {
             padding: 6rem 8%;
             text-align: center;
@@ -116,7 +116,7 @@
             font-weight: bold;
         }
 
-        /* General Sections */
+
         .section {
             padding: 5rem 8%;
         }
@@ -131,7 +131,7 @@
             margin-bottom: 2.5rem;
         }
 
-        /* Skills Section */
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -240,7 +240,7 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+
     <nav class="navbar">
         <div class="logo"><i class="fa-solid fa-microchip"></i> HardwareTech</div>
         <ul class="nav-links">
@@ -252,7 +252,6 @@
         <button id="theme-toggle" class="btn-toggle"><i class="fa-solid fa-moon"></i></button>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
             <h1>Hardware & Systems Specialist</h1>
@@ -267,7 +266,7 @@
         <p>I focus on hands-on electro-technical work, system infrastructure, and hardware-level troubleshooting. From component selection and custom rigs to low-level Linux diagnostic tools and solar energy teardowns, I bridge the gap between technical hardware and system stability.</p>
     </section>
 
-    <!-- Skills Section -->
+
     <section id="skills" class="section bg-alt">
         <h2>Core Hardware & Technical Skills</h2>
         <div class="skills-grid">
@@ -339,7 +338,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+
     <section id="contact" class="section bg-alt">
         <h2>Get In Touch</h2>
         <div class="contact-links">
@@ -353,7 +352,7 @@
         <p>&copy; 2026 Hardware & Systems Specialist Portfolio. Built with Single-File HTML.</p>
     </footer>
 
-    <!-- JavaScript Embedded Inside HTML -->
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const themeToggleBtn = document.getElementById('theme-toggle');
@@ -366,7 +365,7 @@
                 icon.classList.replace('fa-moon', 'fa-sun');
             }
 
-            // Dark / Light Mode Switcher
+            
             themeToggleBtn.addEventListener('click', () => {
                 const currentTheme = document.documentElement.getAttribute('data-theme');
                 let newTheme = 'dark';
@@ -382,7 +381,7 @@
                 localStorage.setItem('theme', newTheme);
             });
 
-            // Smooth Scrolling
+       
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
